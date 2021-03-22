@@ -10,7 +10,7 @@ st.markdown("Produced by Patrick J Maher: github.com/Peej1226/")
 # TODO link this to where this data is stored
 st.sidebar.subheader('Upload a file')
 uploaded_file = st.sidebar.file_uploader("Upload a file")
-uploaded_file = "https://github.com/Peej1226/FileShare_1/blob/master/Score_Data.csv"
+# uploaded_file = "https://github.com/Peej1226/FileShare_1/blob/master/Score_Data.csv"
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
