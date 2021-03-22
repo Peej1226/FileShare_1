@@ -8,9 +8,10 @@ st.header("This pulls data from open.kattis, specifically the top 50 rank data f
 st.markdown("Produced by Patrick J Maher: github.com/Peej1226/")
 
 # TODO link this to where this data is stored
+url = 'https://raw.githubusercontent.com/Peej1226/FileShare_1/722c1ffbb367be3ea4876299511b611f2b00f8ec/Rank_Data.csv'
 st.sidebar.subheader('Upload a file')
 uploaded_file = st.sidebar.file_uploader("Upload a file")
-# uploaded_file = "https://github.com/Peej1226/FileShare_1/blob/master/Score_Data.csv"
+uploaded_file = url
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
